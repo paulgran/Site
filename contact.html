@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Godzilla Diving</title>
+  <link rel="stylesheet" href="style-animated.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-xl font-bold">Godzilla Diving</a>
+      <nav class="space-x-4 hidden md:block">
+        <a class="hover:text-blue-700" href="index.html">Main</a>
+        <a href="about.html" class="hover:text-blue-600">About us</a>
+        <a href="courses.html" class="hover:text-blue-600">Courses</a>
+        <a href="fun-diving.html" class="hover:text-blue-600">Fun diving</a>
+        <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
+        <a href="index.html#contact" class="hover:text-blue-600">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+    <div class="grid md:grid-cols-2 gap-10 text-lg">
+      <div>
+        <p class="mb-4">📞 <strong>Phone:</strong> <a href="tel:+66816877790" class="text-blue-600 hover:underline">+66 8 168 777 90</a></p>
+        <p class="mb-4">💬 <strong>WhatsApp:</strong> <a href="https://wa.me/66816877790" class="text-blue-600 hover:underline">+66 8 168 777 90</a></p>
+        <p class="mb-4">📧 <strong>Email:</strong> <a href="mailto:godzilladiving@gmail.com" class="text-blue-600 hover:underline">godzilladiving@gmail.com</a></p>
+        <p class="mb-4">📲 <strong>Telegram:</strong> <a href="https://t.me/goddive_bot" class="text-blue-600 hover:underline">@goddive_bot</a></p>
+      </div>
+      <div>
+        <form action="mailto:godzilladiving@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+          <input type="text" name="Name" placeholder="Your name" required class="w-full border rounded px-4 py-2">
+          <input type="email" name="Email" placeholder="Your email" required class="w-full border rounded px-4 py-2">
+          <textarea name="Message" rows="4" placeholder="Your message" class="w-full border rounded px-4 py-2"></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Email</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

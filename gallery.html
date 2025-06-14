@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Godzilla Diving</title>
+  <meta name="description" content="Godzilla Diving — Dive like Godzilla on Koh Tao.">
+  <meta property="og:title" content="Gallery | Godzilla Diving" />
+  <meta property="og:description" content="Scuba diving adventures and courses on Koh Tao." />
+  <meta property="og:image" content="hero.webp" />
+  <meta property="og:url" content="https://godzilladiving.example.com/" />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <a href="index.html" class="text-xl font-bold">Godzilla Diving</a>
+      <nav class="space-x-4 hidden md:block">
+        <a class="hover:text-blue-700" href="index.html">Main</a>
+        <a href="about.html" class="hover:text-blue-600">About us</a>
+        <a href="courses.html" class="hover:text-blue-600">Courses</a>
+        <a href="fun-diving.html" class="hover:text-blue-600">Fun diving</a>
+        <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
+        <a href="index.html#contact" class="hover:text-blue-600">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class='p-10'><h2 class='text-2xl font-bold mb-4'>Gallery</h2><p>Images from diving adventures.</p></section>
+
+  <footer class="h-96 bg-cover bg-center mt-20" style="background-image: url('hero.webp');">
+    <div class="h-full w-full bg-black bg-opacity-40 flex items-center justify-center text-white text-2xl font-semibold">
+      See you under the surface!
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('telegramForm')?.addEventListener('submit', function(e) {{
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const text = `<b>Booking Request</b>%0A👤 Name: ${name}%0A📧 Email: ${email}%0A📝 Message: ${message}`;
+      const token = '8187674264:AAHMPNxM0TL6b0B3H5g880AHG_6QHrq7_J4';
+      const chat_id = '381103315';
+      const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=HTML&text=${text}`;
+      fetch(url).then(r => {{
+        if (r.ok) {{
+          document.getElementById('statusMsg').textContent = '✅ Sent successfully!';
+          document.getElementById('telegramForm').reset();
+        }} else {{
+          document.getElementById('statusMsg').textContent = '❌ Error sending message.';
+        }}
+      }}).catch(() => {{
+        document.getElementById('statusMsg').textContent = '❌ Network error.';
+      }});
+    }});
+  </script>
+</body>
+</html>

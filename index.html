@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Godzilla Diving – Koh Tao</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="style-animated.css" rel="stylesheet"/>
+<style>
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .video-container video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body class="text-white">
+<div class="video-container">
+<video autoplay="" loop="" muted="" playsinline="">
+<source src="hero-video.mp4" type="video/mp4"/>
+      Your browser does not support the video tag.
+    </video>
+<div class="video-overlay"></div>
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+<h1 class="text-4xl sm:text-6xl font-bold drop-shadow-lg">Dive Like Godzilla</h1>
+<p class="mt-4 text-lg sm:text-2xl drop-shadow-md">Experience the thrill of underwater adventures on Koh Tao</p>
+<div class="mt-10 flex flex-wrap justify-center gap-4">
+<a class="inline-block bg-white text-gray-900 font-semibold px-5 py-2 rounded-full shadow hover:bg-gray-100 transition" href="about.html">About Us</a>
+<a class="inline-block bg-white text-gray-900 font-semibold px-5 py-2 rounded-full shadow hover:bg-gray-100 transition" href="courses.html">Courses</a>
+<a class="inline-block bg-white text-gray-900 font-semibold px-5 py-2 rounded-full shadow hover:bg-gray-100 transition" href="fun-diving.html">Fun Diving</a>
+<a class="inline-block bg-white text-gray-900 font-semibold px-5 py-2 rounded-full shadow hover:bg-gray-100 transition" href="prices.html">Prices</a>
+<a class="inline-block bg-white text-gray-900 font-semibold px-5 py-2 rounded-full shadow hover:bg-gray-100 transition" href="gallery.html">Gallery</a>
+<a class="inline-block bg-white text-gray-900 font-semibold px-5 py-2 rounded-full shadow hover:bg-gray-100 transition" href="contact.html">Contact Us</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-4">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<a class="bg-white text-blue-500 w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-blue-100 transition text-lg" href="https://t.me/goddive_bot?start=booking" target="_blank">
+<i class="fab fa-telegram-plane"></i>
+</a>
+<a class="bg-white text-green-500 w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-green-100 transition text-lg" href="https://wa.me/66816877790" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<a class="bg-white text-pink-500 w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-pink-100 transition text-lg" href="https://instagram.com/godzilladiving" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="bg-white text-black w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-gray-200 transition text-lg" href="https://www.threads.net/@godzilladiving" target="_blank">
+<i class="fab fa-threads"></i>
+</a>
+
+<a class="bg-white text-red-600 w-10 h-10 flex items-center justify-center rounded-full shadow hover:bg-red-100 transition text-lg" href="https://www.google.com/maps/place/Godzilla+Diving/reviews" target="_blank">
+<i class="fab fa-google"></i>
+</a>
+</div></div>
+</body>
+</html>
