@@ -6,21 +6,39 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Courses | Godzilla Diving</title>
-<link rel="stylesheet" href="style-animated.css">
+<link href="style-animated.css" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="text-gray-800 bg-gray-50">
 <header class="bg-white shadow sticky top-0 z-50">
-<div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-<a class="text-xl font-bold" href="index.html">Godzilla Diving</a>
-<nav class="space-x-4 hidden md:block">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex items-center justify-between w-full">
+<div class="text-xl font-bold text-blue-700">Godzilla Diving</div>
+<div class="hidden md:flex space-x-4 items-center ml-auto">
+<a class="hover:text-blue-700" href="index.html">Main</a>
 <a class="hover:text-blue-600" href="about.html">About us</a>
-<a class="hover:text-blue-600 font-semibold text-blue-700" href="courses.html">Courses</a>
+<a class="hover:text-blue-600" href="courses.html">Courses</a>
 <a class="hover:text-blue-600" href="fun-diving.html">Fun diving</a>
 <a class="hover:text-blue-600" href="gallery.html">Gallery</a>
 <a class="hover:text-blue-600" href="prices.html">Prices</a>
-<a class="hover:text-blue-600" href="index.html#contact">Contact us</a>
-</nav>
+<a class="hover:text-blue-600" href="contact.html">Contact us</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-gray-800 focus:outline-none text-2xl" id="menu-toggle">☰</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Mobile menu -->
+<div class="hidden flex-col space-y-2 mt-4 md:hidden px-4" id="mobile-menu">
+<a class="block text-blue-700" href="index.html">Main</a>
+<a class="block" href="about.html">About us</a>
+<a class="block" href="courses.html">Courses</a>
+<a class="block" href="fun-diving.html">Fun diving</a>
+<a class="block" href="gallery.html">Gallery</a>
+<a class="block" href="prices.html">Prices</a>
+<a class="block" href="contact.html">Contact us</a>
 </div>
 </header>
 <section class="p-10 max-w-6xl mx-auto">
@@ -75,5 +93,11 @@
       See you under the surface!
     </div>
 </footer>
+<script>
+  document.getElementById('menu-toggle')?.addEventListener('click', function () {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>

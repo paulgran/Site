@@ -1,47 +1,69 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Godzilla Diving</title>
-  <link rel="stylesheet" href="style-animated.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Godzilla Diving</title>
+<link href="style-animated.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
-
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="text-xl font-bold">Godzilla Diving</a>
-      <nav class="space-x-4 hidden md:block">
-        <a class="hover:text-blue-700" href="index.html">Main</a>
-        <a href="about.html" class="hover:text-blue-600">About us</a>
-        <a href="courses.html" class="hover:text-blue-600">Courses</a>
-        <a href="fun-diving.html" class="hover:text-blue-600">Fun diving</a>
-        <a href="gallery.html" class="hover:text-blue-600">Gallery</a>
-        <a href="index.html#contact" class="hover:text-blue-600">Contact us</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="max-w-4xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
-    <div class="grid md:grid-cols-2 gap-10 text-lg">
-      <div>
-        <p class="mb-4">📞 <strong>Phone:</strong> <a href="tel:+66816877790" class="text-blue-600 hover:underline">+66 8 168 777 90</a></p>
-        <p class="mb-4">💬 <strong>WhatsApp:</strong> <a href="https://wa.me/66816877790" class="text-blue-600 hover:underline">+66 8 168 777 90</a></p>
-        <p class="mb-4">📧 <strong>Email:</strong> <a href="mailto:godzilladiving@gmail.com" class="text-blue-600 hover:underline">godzilladiving@gmail.com</a></p>
-        <p class="mb-4">📲 <strong>Telegram:</strong> <a href="https://t.me/goddive_bot" class="text-blue-600 hover:underline">@goddive_bot</a></p>
-      </div>
-      <div>
-        <form action="mailto:godzilladiving@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
-          <input type="text" name="Name" placeholder="Your name" required class="w-full border rounded px-4 py-2">
-          <input type="email" name="Email" placeholder="Your email" required class="w-full border rounded px-4 py-2">
-          <textarea name="Message" rows="4" placeholder="Your message" class="w-full border rounded px-4 py-2"></textarea>
-          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Email</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
+<header class="bg-white shadow sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex items-center justify-between w-full">
+<div class="text-xl font-bold text-blue-700">Godzilla Diving</div>
+<div class="hidden md:flex space-x-4 items-center ml-auto">
+<a class="hover:text-blue-700" href="index.html">Main</a>
+<a class="hover:text-blue-600" href="about.html">About us</a>
+<a class="hover:text-blue-600" href="courses.html">Courses</a>
+<a class="hover:text-blue-600" href="fun-diving.html">Fun diving</a>
+<a class="hover:text-blue-600" href="gallery.html">Gallery</a>
+<a class="hover:text-blue-600" href="prices.html">Prices</a>
+<a class="hover:text-blue-600" href="contact.html">Contact us</a>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-gray-800 focus:outline-none text-2xl" id="menu-toggle">☰</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Mobile menu -->
+<div class="hidden flex-col space-y-2 mt-4 md:hidden px-4" id="mobile-menu">
+<a class="block text-blue-700" href="index.html">Main</a>
+<a class="block" href="about.html">About us</a>
+<a class="block" href="courses.html">Courses</a>
+<a class="block" href="fun-diving.html">Fun diving</a>
+<a class="block" href="gallery.html">Gallery</a>
+<a class="block" href="prices.html">Prices</a>
+<a class="block" href="contact.html">Contact us</a>
+</div>
+</header>
+<section class="max-w-4xl mx-auto px-6 py-12">
+<h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+<div class="grid md:grid-cols-2 gap-10 text-lg">
+<div>
+<p class="mb-4">📞 <strong>Phone:</strong> <a class="text-blue-600 hover:underline" href="tel:+66816877790">+66 8 168 777 90</a></p>
+<p class="mb-4">💬 <strong>WhatsApp:</strong> <a class="text-blue-600 hover:underline" href="https://wa.me/66816877790">+66 8 168 777 90</a></p>
+<p class="mb-4">📧 <strong>Email:</strong> <a class="text-blue-600 hover:underline" href="mailto:godzilladiving@gmail.com">godzilladiving@gmail.com</a></p>
+<p class="mb-4">📲 <strong>Telegram:</strong> <a class="text-blue-600 hover:underline" href="https://t.me/goddive_bot">@goddive_bot</a></p>
+</div>
+<div>
+<form action="mailto:godzilladiving@gmail.com" class="space-y-4" enctype="text/plain" method="POST">
+<input class="w-full border rounded px-4 py-2" name="Name" placeholder="Your name" required="" type="text"/>
+<input class="w-full border rounded px-4 py-2" name="Email" placeholder="Your email" required="" type="email"/>
+<textarea class="w-full border rounded px-4 py-2" name="Message" placeholder="Your message" rows="4"></textarea>
+<button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700" type="submit">Send Email</button>
+</form>
+</div>
+</div>
+</section>
+<script>
+  document.getElementById('menu-toggle')?.addEventListener('click', function () {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
